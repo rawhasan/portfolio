@@ -1,0 +1,396 @@
+/* colors */
+:root {
+  --primary: #333;
+  --secondary: #eee;
+  --tertiary: #e5e5e5;
+}
+
+/* common styles */
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+}
+
+section {
+  margin: 50px auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 5px;
+  color: var(--primary);
+}
+
+h1 {
+  font-size: 2.2em;
+  font-weight: 600;
+  line-height: 1em;
+}
+
+h2 {
+  font-size: 1.8em;
+  font-weight: 600;
+  line-height: 1.3em;
+}
+
+h3 {
+  font-size: 1.6em;
+  font-weight: 600;
+  line-height: 1.3em;
+}
+
+h4 {
+  font-size: 1.6em;
+  line-height: 1.3em;
+}
+
+h5 {
+  font-size: 1.3em;
+  font-weight: 600;
+  margin: 20px auto;
+  line-height: 1em;
+}
+
+h6 {
+  font-size: 1.3em;
+  line-height: 1em;
+}
+
+p { line-height: 1.8; }
+
+a {
+  text-decoration: none;
+  color: var(--primary);
+}
+
+ul { padding: 0; }
+
+li {
+  list-style-type: none;
+  /* display: inline-block; */
+  margin-left: 0;
+}
+
+#skills .right li,
+.tasks li {
+  padding-left: 26px;
+  margin-top: 5px;
+  background: url('/icons/tick.svg') no-repeat;
+  background-size: 18px;
+  background-position: 0 5px;
+}
+
+img { max-width: 100%; margin: 0; }
+
+.icon {
+  width: 52px;
+  margin: 0 auto 20px;
+}
+
+#skills, 
+.project-tasks, 
+.back-to-top {
+  background-color: var(--tertiary);
+  padding: 50px 0;
+}
+
+.big-button {
+  background-color: var(--primary);
+  color: var(--secondary);
+  padding: 15px 30px;
+  margin: 20px auto;
+  width: 120px;
+
+}
+
+.big-button a { color: var(--secondary); }
+
+.container {
+  max-width: min(1400px, 90vw);
+  width: 100%;
+  margin: 0 auto;
+}
+
+.project .features,
+.skills .container {
+  display: grid;
+} 
+
+#dev .details,
+#skills h2,
+.project-header,
+.project-name,
+.section-header,
+.features h5 {
+  text-align: center;
+}
+
+/* end common styles */
+
+
+
+/* dev section */
+#dev { line-height: 0; }
+
+#dev .details {
+  background-color: var(--primary);
+  padding: 30px 5vw 15px 5vw;
+}
+
+#dev .details * { color: var(--secondary); }
+#dev .details h1 { font-size: 1.4em; }
+#dev .details p { margin-top: 10px; line-height: 1; }
+
+.link-bar { margin-top: 40px;}
+
+.link-bar li {
+  width: 48px;
+  text-align: center;
+  margin-right: 10px;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.link-bar img {
+  width: 40px;
+  padding-bottom: 5px
+}
+
+.link-bar a {
+  font-size: 0.8em;
+}
+
+.link-bar a:hover {
+  padding-bottom: 3px;
+  border-bottom: 1px solid var(--primary);
+}
+
+.link-bar a * { 
+  display: block;
+  margin: 0 auto
+}
+
+/* end dev section */
+
+/* summery section */
+
+#summery li {
+  display: inline-block;
+}
+
+/* summery section */
+
+/* skills section */
+
+#skills h2 { margin-bottom: 30px; }
+
+#skills p {
+  line-height: 1.5;
+  margin: 0 0 0px 0;
+}
+
+#skills span {
+  background-color: var(--primary);
+  color: var(--secondary);
+  display: inline-block;
+  padding: 5px 10px;
+  margin-right: 3px;
+  margin-bottom: 3px;
+}
+
+#skills .right {
+  margin-top: 80px;
+}
+
+#skills .right li {
+  background-position: 0 4px;
+  margin-top: 7px;
+}
+
+/* end skills section */
+
+/* projects section */
+
+.project {
+  /* text-align: center; */
+}
+
+.project .project-cover { margin: 40px auto; }
+.project .project-features { margin-top: 70px; }
+.project .project-features .third { text-align: center; }
+.project .project-features .third p { text-align: left; }
+.project .project-features h4 { margin-bottom: 20px; }
+
+.project .features .third:first-child, 
+.project .features .third:nth-child(2) {
+  margin-bottom: 50px;
+}
+
+.project-tasks .tasks {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.8;
+}
+
+.tasks .half:first-child { margin-bottom: 30px; }
+
+/* end projects section */
+
+/* footer */
+
+#contact { text-align: center; }
+#contact span { font-weight: bold; }
+
+.back-to-top {
+  padding: 30px 0;
+  text-align: right;
+  margin-bottom: 0;
+}
+
+.back-to-top a {
+  border-bottom: 2px solid var(--primary);
+  padding-bottom: 3px;
+}
+
+/* end footer */
+
+
+
+
+
+
+@media screen and (min-width: 500px) {
+  /* body { background-color: yellowgreen; } */
+
+  #dev {
+    height: 200px;
+    margin-top: 50px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #dev .bar {
+    width: 100%;
+    height: 130px;
+    background-color: var(--primary);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+  } 
+
+  .dev-container {
+    max-width: min(1400px, 90vw);
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    align-items: center;  
+    justify-content: space-between;
+  }
+
+  .dev-container .photo { 
+    flex: 2; 
+    text-align: left;
+  }
+
+    .dev-container .details {
+    background-color: transparent;
+    flex: 3;
+  }
+
+    .dev-container img { 
+    max-width: 200px;
+    width: 100%;
+  }
+
+  #dev .details h1 { font-size: 1.2em; }
+  #dev .details p { font-size: 0.85em; }
+
+  #skills, 
+  .project-tasks, 
+  section { margin: 70px auto; }
+  
+  .project .project-features .third p { text-align: center; }
+}
+
+
+@media screen and (min-width: 768px) {
+  /* body { background-color: goldenrod; } */
+
+  #dev { 
+    height: 250px;
+    margin-top: 100px;
+  }
+
+  #dev .details {
+    background-color: transparent;
+    text-align: left;
+  }
+
+  .dev-container img { max-width: 250px; }
+
+  #dev .details h1 { font-size: 1.8em; }
+  #dev .details p { font-size: 1em; }
+
+  #skills, 
+  .project-tasks, 
+  section { margin: 100px auto; }
+
+  #skills, 
+  .project-tasks {
+    padding: 100px 0;
+  }
+}
+
+
+
+@media screen and (min-width: 960px) {
+  /* body { background-color: forestgreen; } */
+
+  #dev { margin-top: 130px; }
+  #dev .bar { height: 180px; }
+  .dev-container .photo { /* text-align: left; */ }
+  .dev-container img { max-width: 350px; }
+  #dev .details h1 { font-size: 2.2em; }
+  /* #dev .details * { margin-left: 5px; } */
+
+  #summery .container,
+  #skills .container,
+  .features,
+  .project-tasks .tasks {
+    display: grid;
+    column-gap: 20px;
+  }
+
+
+  #summery .container,
+  #skills .container {
+    grid-template-columns: 2fr 3fr;
+  }
+
+  .features,
+  .tasks {
+    margin-top: 30px;
+  }
+
+  .features { grid-template-columns: 1fr 1fr 1fr; }
+  .project .project-features .third p { text-align: left; }
+  .tasks { grid-template-columns: 1fr 1fr; }
+  #skills .container > * { margin-top: 0; }
+  #skills .container h2 { text-align: left; }
+}
+
+
+
+
+@media screen and (min-width: 1200px) {
+  #dev { margin-top: 180px; }
+}
